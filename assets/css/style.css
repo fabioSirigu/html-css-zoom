@@ -1,0 +1,109 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      background-color: black;
+}
+
+.container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 3rem auto;
+}
+
+.users {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+
+.user_section {
+      width: calc((100% / 14) * 2);
+}
+
+.user_card {
+      width: 100%;
+      padding: 0.5rem;
+      position: relative;
+}
+
+img {
+      width: 100%;
+}
+
+.mic_mute {
+      position: absolute;
+      left: 0.5rem;
+      bottom: 1.5rem;
+      font-size: 0.6rem;
+      background-color: rgba(0, 0, 0, 0.300);
+      color: white;
+}
+
+.users_view {
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+}
+
+.speaker_view,
+.maximise {
+      font-size: 0.6rem;
+      font-weight: bold;
+      color: white;
+      background-color: gray;
+      padding: 0.2rem;
+      border-radius: 0.5rem;
+      text-align: center;
+}
+
+.panel {
+      width: 100%;
+      background-color:#222222;
+      color:white;
+      display: flex;
+      position: relative;
+}
+
+.control_left {
+      width: calc((100% / 12) * 2);
+      padding: 1rem;
+      display: flex;
+      text-align: center;
+}
+
+.control_mic > h6,
+.arrow_up {
+      padding: 0.5rem
+}
+
+.control_center {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1rem;
+}
+.share {
+      color: #4BC800;
+}
+
+.control_right {
+      height: 100%;
+      display: flex;
+      justify-content: end;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      background-color: gray;
+      padding: 1.5rem;
+      color: red;
+}
